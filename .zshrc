@@ -45,7 +45,7 @@ plugins=(git brew sbt)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-PROMPT='${ret_status} %n@%m%{$fg_bold[green]%}%p %{$fg[cyan]%}%3c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+PROMPT='${ret_status} %{$fg_bold[green]%}%n@%m%{$fg_bold[green]%}%p %{$fg[cyan]%}%3c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 alias ll='ls -lhF'
 export PATH=/usr/local/bin:/usr/local/share/npm/bin:$PATH
 
