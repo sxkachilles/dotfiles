@@ -55,17 +55,18 @@ filetype plugin indent on    " required
 
 syntax enable
 
-set autoindent          " 自动缩进
-set incsearch           " 实时搜索
-set hlsearch            " 高亮搜索结果
-set ruler               " 显示光标坐标
-set wrap                " 自动折行
-set et                  " expandtab, tab 自动扩展成空格
-set ts=4                " tabstop, 一个 tab 占 4 个空格
-set sw=4                " shiftwidth, 缩进幅度
-set autochdir           " 自动切换工作目录到当前文件目录
+set autoindent          " indent
+set incsearch           " real-time search
+set hlsearch            " highlight search
+set ruler               " cursor position
+set wrap                " auto wrap lines
+set et                  " (expandtab) expand <tab> to <space>
+set ts=4                " (tabstop)
+set sw=4                " (shiftwidth) indent
+set autochdir           " chdir to pwd of current file
 
-colorscheme base16-tomorrow
+colorscheme base16-twilight
+set bg=dark             " very important to avoid ugly color mixing under colored-terms
 
 
 " use powerline patched font
