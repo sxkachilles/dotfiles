@@ -2,17 +2,16 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"let path = '~/some/path/here'
-"call vundle#rc(path)
+"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " The following are examples of different formats supported.
-" Keep Plugin commands between here and filetype plugin indent on.
+" Keep Plugin commands between vundle#begin/end.
 Plugin 'The-NERD-tree'
 Plugin 'The-NERD-Commenter'
 Plugin 'taglist.vim'
@@ -39,22 +38,22 @@ Plugin 'lua.vim'
 Plugin 'luainspect.vim'
 Plugin 'xolox/vim-misc'
 
-
-filetype plugin indent on     " required
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
 " Brief help
-" :PluginList          - list configured plugins
-" :PluginInstall(!)    - install (update) plugins
-" :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Plugin commands are not allowed.
-" Put your stuff after this line
+" Put your non-Plugin stuff after this line
+
 syntax enable
-" set background=dark
 
 set autoindent          " 自动缩进
 set incsearch           " 实时搜索
