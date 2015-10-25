@@ -4,6 +4,7 @@ set guioptions-=r       " hide right scrollbar
 set guioptions-=b       " hide bottom scrollbar
 set lines=40
 set columns=180
+" nu & cursorline still conflict with any iTerm2 theme
 set nu                  " line number
 set cursorline          " highlight current line
 
