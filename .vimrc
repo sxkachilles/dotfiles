@@ -26,7 +26,8 @@ Plugin 'rking/ag.vim'                       " the_silver_searcher, faster than a
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'Yggdroot/indentLine'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'chriskempson/base16-vim'
 Plugin 'Valloric/YouCompleteMe'
 "Plugin 'Shougo/neocomplete.vim'
@@ -67,8 +68,8 @@ set sw=4                " (shiftwidth) indent
 set tw=200              " (textwidth) large enough
 " set autochdir         " chdir to pwd of current file, which has conflict with vimshell
 
-colorscheme base16-twilight
-set bg=dark             " very important to avoid ugly color mixing under colored-terms
+colorscheme base16-solarized-dark
+set bg=dark             " very important to avoid ugly color mixing using colored-terminals
 
 " re-map <leader>
 let mapleader = ' '
